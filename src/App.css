@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* App.css */
+::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+  height: 6px; /* Thin horizontal scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light track color */
+  border-radius: 10px; /* Curved track */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Gradient thumb color */
+  border-radius: 10px; /* Curved thumb */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Same gradient on hover */
 }
 
-.App-link {
-  color: #61dafb;
+/* Apply gradient scrollbar styling to specific elements */
+.popup::-webkit-scrollbar {
+  width: 6px; /* Same thin scrollbar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Same light track color */
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Gradient thumb color */
+  border-radius: 10px; /* Same curved thumb */
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Same gradient on hover */
+}
+
+.table-container::-webkit-scrollbar {
+  width: 6px; /* Same thin scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Same light track color */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Gradient thumb color */
+  border-radius: 10px; /* Same curved thumb */
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #05143a, #1886ae); /* Same gradient on hover */
 }
