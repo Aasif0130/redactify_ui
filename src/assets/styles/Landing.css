@@ -96,7 +96,7 @@
     top: 50%;
     right: 40%; /* Adjust to move closer to the center */
     transform: translate(50%, -50%);
-    width: 200px; /* Increased size */
+    width: 280px; /* Increased size */
     height: auto; /* Maintain aspect ratio */
     cursor: pointer; /* Show pointer cursor on hover */
   }

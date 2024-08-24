@@ -6,9 +6,8 @@ import '../assets/styles/Landing.css'; // Adjust the path if necessary
 // Import images
 import image1 from '../assets/images/backgroundfirst.png'; // Adjust the path if necessary
 import image2 from '../assets/images/image2.png'; // Adjust the path if necessary
-import hex from '../assets/svg/hex.svg'; // Adjust the path if necessary
 import leftSvg from '../assets/svg/leftsvg.svg'; // Import the left SVG
-import rightSvg from '../assets/svg/rightsvg.png'; // Import the right SVG
+import rightSvg from '../assets/svg/rightsvg.svg'; // Import the right SVG
 
 import Header from './Header';
 
@@ -34,7 +33,7 @@ const Landing = () => {
       </div>
       
       <div className="image2" style={{ backgroundImage: `url(${image2})` }}>
-        <img src={hex} alt="Hex" className="hex-svg" />
+      
         <img src={leftSvg} alt="Left SVG" className="left-svg" onClick={handleLeftClick} />
         <img src={rightSvg} alt="Right SVG" className="right-svg" onClick={handleRightClick} />
       </div>

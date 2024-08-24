@@ -9,6 +9,7 @@ import './App.css'; // or the path to your global CSS file
 import Loader from './components/Loader';
 
 
+
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/selectfile" element={<SelectFile/>}/>
         <Route path="/" element={<Landing/>}/>
         <Route path="/loader" element={<Loader/>}/>
+
       </Routes>
     </Router>
   );

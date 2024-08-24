@@ -15,23 +15,13 @@
   <polygon id="hexagon" points="200,50 350,150 350,250 200,350 50,250 50,150"
            fill="#d3d3d3" stroke="#a9a9a9" stroke-width="2" filter="url(#shadow)"/>
   
-  <!-- Redaction Effect -->
-  <rect id="redaction" x="70" y="170" width="260" height="60" fill="black" opacity="0"/>
-  
   <!-- Text Inside Hexagon -->
-  <text id="text" x="200" y="210" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">
-    REDACT A FILE
+  <text id="text" x="200" y="220" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">
+    REDACTED FILES
   </text>
 
-  <!-- CSS Animation -->
+  <!-- CSS for Hover Effect -->
   <style>
-    @keyframes redact {
-      0% { opacity: 0; }
-      50% { opacity: 1; }
-      100% { opacity: 0; }
-    }
-    #redaction { animation: redact 4s infinite; }
-    
     #hexagon {
       transition: transform 0.3s, fill 0.3s;
     }
